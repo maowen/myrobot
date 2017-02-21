@@ -212,7 +212,7 @@ void LaneDetect(Mat & img_rgba, const char * str, int saveFile, char * outStr)
 //    HoughLinesP( img_contours, lines, 1, CV_PI/180, 40, 0, 30 );
     HoughLinesP( img_contours, lines, 1, CV_PI/180, 40, 100, 30 );
 
-    LOGE("bob lines count:%d", lines.size());
+    LOGE("bob lines count:%lu", lines.size());
     float alpha;
     int width;
     int height;
